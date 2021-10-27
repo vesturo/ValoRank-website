@@ -60,7 +60,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4dd50000', e
     background-color: #2C2F33 !important
 }
 .heading {
-    padding: 160px 50px !important;
+    padding: 150px 50px !important;
     color: #fff !important;
     background-position: bottom !important;
     background-size: 300% !important;
@@ -79,10 +79,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4dd50000', e
     font-family: 'Lato', sans-serif;
 }
 
+.features {
+ /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1d1e28+0,d50000+50,1d1e28+100 */
+background: #1d1e28; /* Old browsers */
+background: -moz-linear-gradient(top,  #1d1e28 0%, #d50000 50%, #1d1e28 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #1d1e28 0%,#d50000 50%,#1d1e28 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #1d1e28 0%,#d50000 50%,#1d1e28 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d1e28', endColorstr='#1d1e28',GradientType=0 ); /* IE6-9 */
+}
 
 .features {
     text-align: center !important;
-    background: #d50000 !important;
     padding: 60px 50px !important;
     background-position: bottom !important;
     background-size: 200% !important;
