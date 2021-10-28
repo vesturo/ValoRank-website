@@ -57,7 +57,8 @@ body {
      background: #ff4459 !important;
  }
 .navbar {
-    box-shadow: none !important
+    box-shadow: none !important;
+    background-color: #1d1e2824!important;
 }
 
 .navbar-brand {
