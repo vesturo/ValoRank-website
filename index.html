@@ -37,41 +37,40 @@
               </li>
             </ul>
             <form class="d-flex" style=" font-size: 11px !important;">
-                <button class="btn login-btn" type="submit"><i class="fab fa-github me-3"></i>  Github Repository</button>
-              <button class="btn login-btn" href="https://discord.com/api/oauth2/authorize?client_id=900426511268610048&permissions=2415922176&scope=bot%20applications.commands" target="_blank" role="button"><i class="fab fa-discord me-3"></i>Add to server</button>
+                <button class="btn login-btn " type="submit"><i class="fab fa-github me-3"></i>  Github Repository</button>
+              <button class="btn login-btn disabled" href="https://discord.com/api/oauth2/authorize?client_id=900426511268610048&permissions=2415922176&scope=bot%20applications.commands" target="_blank" role="button"><i class="fab fa-discord me-3"></i>Add to server</button>
             </form>
           </div>
         </div>
       </nav>
+
+      <!-- Trigger the Modal -->
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>
+
 <div class="heading" id="heading">
     <h1 class="display-5 title">It's time to use ValoTrack Sync in your server.</h1>
-    <p class="subtitle">ValoTrack Sync is a Valorant Ranking bot ready to skill up and boost up your Discord server<br />Also integrates o</p>
-    <a class="btn btn-primary btn-lg" href="#start_link" target="_blank" role="button">Get started</a>
-    <a class="btn btn-secondary btn-lg" href="https://discord.com/api/oauth2/authorize?client_id=900426511268610048&permissions=2415922176&scope=bot%20applications.commands" target="_blank" role="button">Add to server</a>
+    <p class="subtitle">ValoTrack Sync is a Valorant Ranking bot ready to skill up and boost up your Discord server</p>
+    <a class="btn btn-primary btn-lg disabled" href="#start_link" target="_blank" role="button">Get started</a>
+    <a class="btn btn-secondary btn-lg disabled" href="https://discord.com/api/oauth2/authorize?client_id=900426511268610048&permissions=2415922176&scope=bot%20applications.commands" target="_blank" role="button">Add to server</a>
     <br /><br /><br /><br /><br /><br />
 </div>
 <div class="features" id="features">
-    <div class="title">Features of ValoTrack Sync</div>
+    <div class="title">Simple Sync</div>
     <div class="subtitle">We provide you the best features in ValoTrack Sync!</div>
-    <div class="cards">
-        <div class="card" style="width: 18rem;">
-        <div class="card-body">
-            <h5 class="card-title">Future #1</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ex ante, mattis vel dapibus vel, tempor facilisis justo. Vivamus dignissim ut nisi eu consequat.</p>
-        </div>
-    </div>
-        <div class="card" style="width: 18rem;">
-            <div class="card-body">
-                <h5 class="card-title">Future #2</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ex ante, mattis vel dapibus vel, tempor facilisis justo. Vivamus dignissim ut nisi eu consequat.</p>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <div class="card-body">
-                <h5 class="card-title">Future #3</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ex ante, mattis vel dapibus vel, tempor facilisis justo. Vivamus dignissim ut nisi eu consequat.</p>
-            </div>
-        </div>
+    <div class="row d-flex justify-content-center mt-4">
+      <img style="width: 45%;" id="myImg" src="https://snap.studio-v.net/images/pae4v.png">
     </div>
 </div>
 <div class="container commands" id="commands">
@@ -148,7 +147,7 @@
                 <div class="title">Ready to try ValoTrack Sync?</div>
                 <div class="subtitle">Invite ValoTrack Sync and start giving your server cool perks!</div>
                 <br />
-                <a class="btn btn-primary btn-lg" href="#start_link" role="button">Get started</a>
+                <a class="btn btn-primary btn-lg disabled" href="#start_link" role="button">Get started</a>
             </div><br />
         </div>
     </div>
@@ -164,4 +163,25 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="js/now-ui-kit.min.js"></script>
+<script>
+    var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById("myImg");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+
+// Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+</script>
 </body>
