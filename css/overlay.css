@@ -1,0 +1,86 @@
+@font-face {
+    font-family: 'Plateia';
+    src: url('../fonts/Plateia Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'formation';
+    src: url('../fonts/Formation.ttf') format('truetype');
+}
+
+.bg{
+    height: 93px;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    top: -25px;
+    transform: skewY(357deg);
+    background: rgb(0,0,0);
+}
+
+.spanmcy{
+    font-family: 'Plateia';
+    background: linear-gradient(180deg, rgba(55,199,132,1) 0%, rgba(25,206,211,1) 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #60ffb5;
+}
+
+.spanvesturo{
+    font-family: 'Plateia';
+    background: linear-gradient(180deg, rgba(255, 92, 90,1) 0%, rgba(246, 86, 85,1) 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #ff0300;
+}
+
+.overlay{
+    width: 20%;
+    height: 7%;
+    color: white;
+    font-family: 'Plateia';
+    text-transform: uppercase;
+}
+
+.top-left{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.top-center{}
+
+.top-right{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.bottom-left{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+.bottom-center{}
+
+.bottom-right{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.subtitle{
+    text-transform: uppercase;
+}
+
+.overlayimg{
+    width: 135%;
+    height: 100%;
+}
+
+span{
+    width: unset !important;
+}
