@@ -8,9 +8,9 @@
     src: url('../fonts/Formation.ttf') format('truetype');
 }
 
-.bg{
+.bgvesturo{
     height: 93px;
-    width: 100%;
+    width: 84%;
     z-index: -1;
     position: absolute;
     top: -25px;
